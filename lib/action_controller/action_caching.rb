@@ -1,9 +1,8 @@
 require "action_controller/caching/actions"
 
 module ActionController
-  extend ActiveSupport::Autoload
-
-  module Caching
+  module Caching  
+    extend ActiveSupport::Autoload
     eager_autoload do
       autoload :Actions
     end
